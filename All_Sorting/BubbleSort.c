@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//Function implementing BUbble Sort
 void bubbleSort(int a[],int len){
     int i,j,temp;
     for(i = 0;i < len;i++){
@@ -13,6 +14,8 @@ void bubbleSort(int a[],int len){
         }
     }
 }
+
+//Function for displaying the Array
 void display(int a[],int len){
     int i;
     for(i = 0;i < len;i++){
@@ -20,7 +23,9 @@ void display(int a[],int len){
     }
     printf("\n");
 }
-void main(){
+
+//Main function
+void main( ){
     int len,*a,i;
     printf("Enter the size of the Array : ");
     scanf("%d",&len);
