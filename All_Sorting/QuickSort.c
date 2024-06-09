@@ -7,9 +7,9 @@ void displayArray (int *a, int len)
 {
     for (int i = 0; i < len; i++)
     {
-        printf("  %d",a[i]);
+        printf("%d ",a[i]);
     }
-    printf("\n");
+    printf("]\n");
 }
 //Partition Function(Backbone of the Quick Sort) used for Dividing the Array into two halves according to the Pivot Element :
 int partition (int *a, int lb, int ub)
@@ -63,15 +63,16 @@ int main ()
     //Inserting the Input Elements into the Array :
     for (i = 0; i < len; i++)
     {
+        printf("(%d) --> ",i+1);
         scanf("%d",&a[i]);
     }
     //Displaying the Array before Sorting :
-    printf("\nThe Elements of the Array before Sorting : ");
+    printf("\nThe Elements of the Array before Sorting : [ ");
     displayArray(a, len);
     //Calling quickSort :
     quickSort(a, 0, len - 1);
     //Displaying the Array after Sorting :
-    printf("\nThe Elements of the Array after Sorting : ");
+    printf("\nThe Elements of the Array after Sorting : [");
     displayArray(a, len);
 
     return 0;
